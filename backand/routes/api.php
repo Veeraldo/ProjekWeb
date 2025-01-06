@@ -7,8 +7,9 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderDetailController;
 
 // Resource routes untuk masing-masing controller
-Route::resource('customers', CustomerController::class);
-Route::resource('games', GameController::class);
-Route::resource('game-images', GameImageController::class);
-Route::resource('orders', OrderController::class);
-Route::resource('order-details', OrderDetailController::class);
+Route::apiResource('customers', CustomerController::class);
+Route::apiResource('games', GameController::class);
+Route::apiResource('game-images', GameImageController::class);
+Route::apiResource('orders', OrderController::class);
+Route::apiResource('order-details', OrderDetailController::class);
+
